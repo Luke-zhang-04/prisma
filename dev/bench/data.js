@@ -1,6 +1,6 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1640103211547,
-  "repoUrl": "https://github.com/prisma/prisma",
+  "lastUpdate": 1640105280755,
+  "repoUrl": "https://github.com/Luke-zhang-04/prisma",
   "entries": {
     "Benchmark.js Benchmark": [
       {
@@ -72450,6 +72450,72 @@ window.BENCHMARK_DATA = {
           {
             "name": "@prisma/client size",
             "value": 13,
+            "range": "±0.00%",
+            "unit": "MB",
+            "extra": "1 samples"
+          },
+          {
+            "name": ".prisma/client size",
+            "value": 45,
+            "range": "±0.00%",
+            "unit": "MB",
+            "extra": "1 samples"
+          },
+          {
+            "name": ".prisma/client/index.d.ts size",
+            "value": 1.7,
+            "range": "±0.00%",
+            "unit": "MB",
+            "extra": "1 samples"
+          },
+          {
+            "name": ".prisma/client/index.js size",
+            "value": 3.1,
+            "range": "±0.00%",
+            "unit": "MB",
+            "extra": "1 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Luke_zhang_04@protonmail.com",
+            "name": "Luke-zhang-04",
+            "username": "Luke-zhang-04"
+          },
+          "committer": {
+            "email": "Luke_zhang_04@protonmail.com",
+            "name": "Luke-zhang-04",
+            "username": "Luke-zhang-04"
+          },
+          "distinct": true,
+          "id": "a088b4f9b18568274eac5d3a612c149407578dde",
+          "message": "Merge branch 'main' of https://github.com/prisma/prisma into main",
+          "timestamp": "2021-12-21T16:43:22Z",
+          "tree_id": "f8e9473ac1d25ce5e98e349ea72d6ef04998d445",
+          "url": "https://github.com/Luke-zhang-04/prisma/commit/a088b4f9b18568274eac5d3a612c149407578dde"
+        },
+        "date": 1640105276725,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "client generation ~50 Models",
+            "value": 0.38,
+            "range": "±4.75%",
+            "unit": "ops/sec",
+            "extra": "6 samples"
+          },
+          {
+            "name": "typescript compilation ~50 Models",
+            "value": 0.09,
+            "range": "±2.80%",
+            "unit": "ops/sec",
+            "extra": "5 samples"
+          },
+          {
+            "name": "@prisma/client size",
+            "value": 12,
             "range": "±0.00%",
             "unit": "MB",
             "extra": "1 samples"
