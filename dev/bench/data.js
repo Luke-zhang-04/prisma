@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1641442280785,
+  "lastUpdate": 1642050416207,
   "repoUrl": "https://github.com/Luke-zhang-04/prisma",
   "entries": {
     "Benchmark.js Benchmark": [
@@ -72642,6 +72642,72 @@ window.BENCHMARK_DATA = {
             "name": "typescript compilation ~50 Models",
             "value": 0.11,
             "range": "±1.98%",
+            "unit": "ops/sec",
+            "extra": "5 samples"
+          },
+          {
+            "name": "@prisma/client size",
+            "value": 13,
+            "range": "±0.00%",
+            "unit": "MB",
+            "extra": "1 samples"
+          },
+          {
+            "name": ".prisma/client size",
+            "value": 45,
+            "range": "±0.00%",
+            "unit": "MB",
+            "extra": "1 samples"
+          },
+          {
+            "name": ".prisma/client/index.d.ts size",
+            "value": 1.7,
+            "range": "±0.00%",
+            "unit": "MB",
+            "extra": "1 samples"
+          },
+          {
+            "name": ".prisma/client/index.js size",
+            "value": 3.1,
+            "range": "±0.00%",
+            "unit": "MB",
+            "extra": "1 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "Luke_zhang_04@protonmail.com",
+            "name": "Luke-zhang-04",
+            "username": "Luke-zhang-04"
+          },
+          "committer": {
+            "email": "Luke_zhang_04@protonmail.com",
+            "name": "Luke-zhang-04",
+            "username": "Luke-zhang-04"
+          },
+          "distinct": true,
+          "id": "b71085b1a5d07b920d48e6aa21ee4b9e91cc2b0f",
+          "message": "test(client): add test for generating 1 dir level",
+          "timestamp": "2022-01-13T00:02:39-05:00",
+          "tree_id": "ead4accb0c7f3652ef054604edf118c12ee78a22",
+          "url": "https://github.com/Luke-zhang-04/prisma/commit/b71085b1a5d07b920d48e6aa21ee4b9e91cc2b0f"
+        },
+        "date": 1642050412177,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "client generation ~50 Models",
+            "value": 0.44,
+            "range": "±6.54%",
+            "unit": "ops/sec",
+            "extra": "7 samples"
+          },
+          {
+            "name": "typescript compilation ~50 Models",
+            "value": 0.11,
+            "range": "±3.43%",
             "unit": "ops/sec",
             "extra": "5 samples"
           },
