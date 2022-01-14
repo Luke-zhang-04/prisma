@@ -29,7 +29,7 @@ export async function generateInFolder({
   transpile = true,
   packageSource,
   useBuiltRuntime,
-  relativeOutputDir,
+  relativeOutputDir = transpile ? 'node_modules/@prisma/client' : '@prisma/client',
 }: GenerateInFolderOptions): Promise<number> {
   const before = performance.now()
   if (!projectDir) {
@@ -51,10 +51,6 @@ export async function generateInFolder({
     datamodel,
     previewFeatures,
   })
-
-  if (relativeOutputDir === undefined) {
-    relativeOutputDir = transpile ? 'node_modules/@prisma/client' : '@prisma/client'
-  }
 
   const outputDir = path.join(projectDir, relativeOutputDir)
 
