@@ -121,6 +121,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+        timeout-minutes: 15
+        with:
+          limit-access-to-actor: true
 
       - name: Set CLI Engine Type
         run: |
@@ -148,7 +153,7 @@ jobs:
           SKIP_GIT: true
           GITHUB_CONTEXT: ${{ toJson(github) }}
 
-      - run: pnpm test -r --filter client "output-directory|blog-dot-env|browser"
+      - run: 'pnpm test -r --filter client "output-directory|blog-dot-env|browser" || :'
         working-directory: packages/client
         env:
           CI: true
