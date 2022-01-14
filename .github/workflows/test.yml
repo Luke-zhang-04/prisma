@@ -3,8 +3,7 @@ name: CI
 # Run on push only for main, if not it will trigger push & pull_request on PRs at the same time
 on:
   push:
-    branches:
-      - main
+    branches: {}
     paths-ignore:
       # Any update here needs to be done for
       # - `pull_request` see below
