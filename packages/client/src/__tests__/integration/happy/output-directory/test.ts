@@ -4,7 +4,7 @@ beforeAll(async () => {
   await generateInFolder({
     projectDir: __dirname,
     useLocalRuntime: true,
-    transpile: false,
+    transpile: true,
     useBuiltRuntime: false,
     relativeOutputDir: './prismaClient',
   })
