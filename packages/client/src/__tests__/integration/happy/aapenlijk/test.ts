@@ -5,8 +5,8 @@ beforeAll(async () => {
     projectDir: __dirname,
     useLocalRuntime: true,
     transpile: true,
-    useBuiltRuntime: false,
-    relativeOutputDir: './prismaClient',
+    useBuiltRuntime: true,
+    relativeOutputDir: 'prismaClient',
   })
 })
 

@@ -18,8 +18,12 @@ const readdir = promisify(fs.readdir)
 const rename = promisify(fs.rename)
 
 export async function getPackedPackage(name: string, target?: string, packageDir?: string): Promise<string | void> {
+  console.log({ packageDir, name, target })
+
   packageDir =
     packageDir || (await resolvePkg(name, { basedir: process.cwd() })) || (await resolvePkg(name, { basedir: target }))
+
+  console.log({ packageDir })
 
   if (!packageDir) {
     const pkg = await readPkgUp({
@@ -30,9 +34,13 @@ export async function getPackedPackage(name: string, target?: string, packageDir
     }
   }
 
+  console.log({ packageDir })
+
   if (!packageDir && fs.existsSync(path.join(process.cwd(), 'package.json'))) {
     packageDir = process.cwd()
   }
+
+  console.log({ packageDir }, process.cwd())
 
   if (!packageDir) {
     throw new Error(`Error in getPackage: Could not resolve package ${name} from ${__dirname}`)

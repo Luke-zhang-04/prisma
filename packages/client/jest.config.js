@@ -16,6 +16,7 @@ module.exports = {
     '<rootDir>/src/__tests__/types/.*/test.ts',
     '<rootDir>/src/__tests__/integration/happy/exhaustive-schema/generated-dmmf.ts',
     '<rootDir>/src/__tests__/integration/happy/output-directory/prismaClient/',
+    '<rootDir>/src/__tests__/integration/happy/aapenlijk/prismaClient/',
     '__helpers__/',
     'node_modules/',
     'index.ts',

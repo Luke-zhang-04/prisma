@@ -31,6 +31,7 @@ export async function generateInFolder({
   useBuiltRuntime,
   relativeOutputDir = transpile ? 'node_modules/@prisma/client' : '@prisma/client',
 }: GenerateInFolderOptions): Promise<number> {
+  console.log('O', relativeOutputDir, process.cwd())
   const before = performance.now()
   if (!projectDir) {
     throw new Error(`Project dir missing. Usage: ts-node examples/generate.ts examples/accounts`)
@@ -70,7 +71,11 @@ export async function generateInFolder({
         overwrite: true,
       })
     } else {
-      await getPackedPackage('@prisma/client', outputDir)
+      await getPackedPackage(
+        '@prisma/client',
+        outputDir,
+        process.cwd().endsWith('aapenlijk') ? path.join(__dirname, '..', '..') : undefined,
+      )
     }
   }
 
