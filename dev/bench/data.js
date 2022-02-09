@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1643732974633,
+  "lastUpdate": 1644402391837,
   "repoUrl": "https://github.com/Luke-zhang-04/prisma",
   "entries": {
     "Benchmark.js Benchmark": [
@@ -72985,6 +72985,72 @@ window.BENCHMARK_DATA = {
           {
             "name": ".prisma/client size",
             "value": 45,
+            "range": "±0.00%",
+            "unit": "MB",
+            "extra": "1 samples"
+          },
+          {
+            "name": ".prisma/client/index.d.ts size",
+            "value": 1.7,
+            "range": "±0.00%",
+            "unit": "MB",
+            "extra": "1 samples"
+          },
+          {
+            "name": ".prisma/client/index.js size",
+            "value": 3.1,
+            "range": "±0.00%",
+            "unit": "MB",
+            "extra": "1 samples"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "piotrowski+github@gmail.com",
+            "name": "Jan Piotrowski",
+            "username": "janpio"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6e30909db649e3d3ed04297c114ca867499fb335",
+          "message": "Merge branch 'main' into main",
+          "timestamp": "2022-02-09T11:22:51+01:00",
+          "tree_id": "befeb0b278664cbdfa4b4aacbcfab3702534013c",
+          "url": "https://github.com/Luke-zhang-04/prisma/commit/6e30909db649e3d3ed04297c114ca867499fb335"
+        },
+        "date": 1644402387724,
+        "tool": "benchmarkjs",
+        "benches": [
+          {
+            "name": "client generation ~50 Models",
+            "value": 0.55,
+            "range": "±7.42%",
+            "unit": "ops/sec",
+            "extra": "7 samples"
+          },
+          {
+            "name": "typescript compilation ~50 Models",
+            "value": 0.13,
+            "range": "±1.48%",
+            "unit": "ops/sec",
+            "extra": "5 samples"
+          },
+          {
+            "name": "@prisma/client size",
+            "value": 8,
+            "range": "±0.00%",
+            "unit": "MB",
+            "extra": "1 samples"
+          },
+          {
+            "name": ".prisma/client size",
+            "value": 42,
             "range": "±0.00%",
             "unit": "MB",
             "extra": "1 samples"
